@@ -1,4 +1,5 @@
 // DOM SECTION
+
 const btn = document.querySelector('.btn');
 const input = document.querySelector('.id');
 const result = document.querySelector('.result');
@@ -6,12 +7,13 @@ const txt = document.querySelector('.name');
 const img = document.querySelector('.img');
 const hei = document.querySelector('.height');
 
+
 // FUNCTIONS
 
 function renderPokemon(name, image, height){
-    txt.innerHTML = name;
+    txt.innerHTML = `name: ${name}`;
     img.setAttribute('src', image);
-    hei.innerHTML = height;
+    hei.innerHTML = `height: ${height}`;
 }
 
 btn.addEventListener('click', (e) => {
@@ -26,14 +28,10 @@ btn.addEventListener('click', (e) => {
         let image = data.sprites.front_default;
         let height = data.height;
         renderPokemon(name, image, height);
+
     })
 
-
-
     .catch(err => console.log('error'))
-
-
-
 })
 
 

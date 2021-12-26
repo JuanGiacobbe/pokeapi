@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+
+/* GENERAL STYLES */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1e2420;
+    color: #fff;
+    height: 100vh;
+}
+.col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* FORM SECTION */
+
+.form{
+    padding: 30px;
+}
+
+.form .id{
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+}
+.form .id::placeholder{
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.form .btn{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    border: 2px solid #fff;
+    background-color: #1e2420;
+    border-radius: 10px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.form .btn:hover{
+    color: #1e2420;
+    border: 2px solid #1e2420;
+    background-color: #fff;
+}
+
+
+/* RESULT SECTION */
+
+.result{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    background-color: #1e2420;
+    color: #fff;
+    padding: 30px;
+}
+
+.result .col .name,
+.result .col .height{
+    text-align: start;
+}
+
+.result .img{
+    width: 100%;
+}
